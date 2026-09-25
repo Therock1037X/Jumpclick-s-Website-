@@ -12,15 +12,14 @@ const serviceIcons = {
   architecture: <Building2 size={20} />
 };
 
-const Services = ({ onSelectService }) => {
+const Services = ({ onSelectService, onNavigateToContact }) => {
 
   const handleBookService = (service) => {
     if (onSelectService) {
       onSelectService(service.title);
     }
-    const contactEl = document.getElementById('contact');
-    if (contactEl) {
-      contactEl.scrollIntoView({ behavior: 'smooth' });
+    if (onNavigateToContact) {
+      onNavigateToContact();
     }
   };
 
@@ -123,17 +122,13 @@ const Services = ({ onSelectService }) => {
               We frequently produce multi-day destination campaigns, private family documentaries, and international advertising lookbooks with custom logistical riders.
             </p>
           </div>
-          <a
-            href="#contact"
+          <button
             className="btn btn-outline bespoke-btn"
-            onClick={(e) => {
-              e.preventDefault();
-              handleBookService({ title: 'Bespoke Production / Custom Commission' });
-            }}
+            onClick={() => handleBookService({ title: 'Bespoke Production / Custom Commission' })}
             id="services-custom-commission-btn"
           >
             <span>Request Custom Proposal</span>
-          </a>
+          </button>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import { Camera, Eye, Palette, HeartHandshake, ShieldCheck, Sliders, CheckCircle
 import { ABOUT_DETAILS } from '../data/photographyData';
 import './About.css';
 
-const About = ({ onBookConsultation }) => {
+const About = ({ onBookConsultation, onViewGallery }) => {
   const [activeTab, setActiveTab] = useState('philosophy');
 
   const traitIcons = [
@@ -153,32 +153,21 @@ const About = ({ onBookConsultation }) => {
 
               {/* About Action Row */}
               <div className="about-actions-row">
-                <a
-                  href="#contact"
+                <button
                   className="btn btn-primary"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const el = document.getElementById('contact');
-                    if (el) el.scrollIntoView({ behavior: 'smooth' });
-                    if (onBookConsultation) onBookConsultation();
-                  }}
+                  onClick={() => onBookConsultation && onBookConsultation()}
                   id="about-meet-photographer-btn"
                 >
                   <span>Book Private Consultation</span>
-                </a>
+                </button>
 
-                <a
-                  href="#gallery"
+                <button
                   className="btn btn-outline"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const el = document.getElementById('gallery');
-                    if (el) el.scrollIntoView({ behavior: 'smooth' });
-                  }}
+                  onClick={() => onViewGallery && onViewGallery()}
                   id="about-view-selected-works-btn"
                 >
                   <span>View Selected Works</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>

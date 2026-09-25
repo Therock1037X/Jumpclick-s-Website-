@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight, ArrowDown, Sparkles, Award } from 'lucide-re
 import { HERO_SLIDES, STUDIO_INFO } from '../data/photographyData';
 import './Hero.css';
 
-const Hero = ({ onExploreGallery, onBookSession }) => {
+const Hero = ({ onExploreGallery, onBookSession, onExploreAbout }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const autoPlayRef = useRef(null);
@@ -96,33 +96,21 @@ const Hero = ({ onExploreGallery, onBookSession }) => {
 
           {/* Action CTAs */}
           <div className="hero-cta-group animate-fade-in">
-            <a
-              href="#gallery"
+            <button
               className="btn btn-primary btn-lg"
-              onClick={(e) => {
-                e.preventDefault();
-                const el = document.getElementById('gallery');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-                if (onExploreGallery) onExploreGallery();
-              }}
+              onClick={() => onExploreGallery && onExploreGallery()}
               id="hero-explore-gallery-btn"
             >
               <span>Explore The Gallery</span>
-            </a>
+            </button>
 
-            <a
-              href="#contact"
+            <button
               className="btn btn-outline btn-lg"
-              onClick={(e) => {
-                e.preventDefault();
-                const el = document.getElementById('contact');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-                if (onBookSession) onBookSession();
-              }}
+              onClick={() => onBookSession && onBookSession()}
               id="hero-book-session-btn"
             >
               <span>Reserve Your Date</span>
-            </a>
+            </button>
           </div>
 
           {/* Active Slide Context Pill */}
@@ -175,22 +163,17 @@ const Hero = ({ onExploreGallery, onBookSession }) => {
       </div>
 
       {/* Scroll Down Cue */}
-      <a
-        href="#about"
-        className="hero-scroll-cue"
-        aria-label="Scroll down to About Section"
-        onClick={(e) => {
-          e.preventDefault();
-          const target = document.getElementById('about');
-          if (target) target.scrollIntoView({ behavior: 'smooth' });
-        }}
+      <button
+        className="hero-scroll-cue btn-clean"
+        aria-label="Discover Studio Story"
+        onClick={() => onExploreAbout && onExploreAbout()}
         id="hero-scroll-indicator"
       >
-        <span className="scroll-cue-text">SCROLL TO DISCOVER</span>
+        <span className="scroll-cue-text">DISCOVER STUDIO STORY</span>
         <div className="scroll-cue-icon-wrap">
           <ArrowDown size={14} className="scroll-cue-arrow" />
         </div>
-      </a>
+      </button>
 
       {/* Floating Studio Stats Banner at bottom of hero */}
       <div className="hero-stats-banner">

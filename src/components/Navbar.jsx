@@ -4,33 +4,24 @@ import { InstagramIcon } from './SocialIcons';
 import { STUDIO_INFO } from '../data/photographyData';
 import './Navbar.css';
 
-const Navbar = ({ onOpenBooking }) => {
+const NAV_TABS = [
+  { id: 'home', label: 'Home' },
+  { id: 'about', label: 'About Us' },
+  { id: 'services', label: 'Services' },
+  { id: 'gallery', label: 'Gallery' },
+  { id: 'contact', label: 'Contact Us' },
+];
+
+const Navbar = ({ activeTab, onSelectTab }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 40) {
+      if (window.scrollY > 30) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
-      }
-
-      // Determine active section for nav highlight
-      const sections = ['home', 'about', 'services', 'gallery', 'experience', 'testimonials', 'contact'];
-      const scrollPosition = window.scrollY + 200;
-
-      for (const sectionId of sections) {
-        const el = document.getElementById(sectionId);
-        if (el) {
-          const top = el.offsetTop;
-          const height = el.offsetHeight;
-          if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(sectionId);
-            break;
-          }
-        }
       }
     };
 
@@ -47,33 +38,18 @@ const Navbar = ({ onOpenBooking }) => {
     }
   }, [mobileMenuOpen]);
 
-  const navLinks = [
-    { label: 'Home', href: '#home', id: 'home' },
-    { label: 'About', href: '#about', id: 'about' },
-    { label: 'Services', href: '#services', id: 'services' },
-    { label: 'Gallery', href: '#gallery', id: 'gallery' },
-    { label: 'Experience', href: '#experience', id: 'experience' },
-    { label: 'Praise', href: '#testimonials', id: 'testimonials' },
-    { label: 'Contact', href: '#contact', id: 'contact' },
-  ];
-
-  const handleNavClick = (e, href) => {
-    e.preventDefault();
+  const handleTabClick = (tabId) => {
     setMobileMenuOpen(false);
-    const target = document.querySelector(href);
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
+    onSelectTab(tabId);
   };
 
   return (
-    <header className={`navbar-header ${isScrolled ? 'navbar-scrolled' : ''}`}>
+    <header className={`navbar-header ${isScrolled || activeTab !== 'home' ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container">
-        {/* Brand Logo */}
-        <a 
-          href="#home" 
-          className="brand-logo" 
-          onClick={(e) => handleNavClick(e, '#home')}
+        {/* Brand Logo - clicks to Home Tab */}
+        <button 
+          className="brand-logo btn-clean" 
+          onClick={() => handleTabClick('home')}
           aria-label="Jump Click's Photography Home"
           id="nav-brand-logo"
         >
@@ -82,44 +58,43 @@ const Navbar = ({ onOpenBooking }) => {
             <div className="brand-icon-lens-ring"></div>
           </div>
           <div className="brand-text-wrap">
-            <span className="brand-title">JUMP CLICK'S</span>
+            <span className="brand-title">JUMP CLICK&apos;S</span>
             <span className="brand-subtitle">PHOTOGRAPHY STUDIO</span>
           </div>
-        </a>
+        </button>
 
-        {/* Desktop Navigation Links */}
+        {/* Desktop Tab Navigation */}
         <nav className="desktop-nav" aria-label="Main Navigation">
           <ul className="nav-list">
-            {navLinks.map((link) => (
-              <li key={link.id} className="nav-item">
-                <a
-                  href={link.href}
-                  className={`nav-link ${activeSection === link.id ? 'active' : ''}`}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  id={`nav-link-${link.id}`}
-                >
-                  {link.label}
-                  {activeSection === link.id && <span className="active-dot" />}
-                </a>
-              </li>
-            ))}
+            {NAV_TABS.map((tab) => {
+              const isActive = activeTab === tab.id;
+              return (
+                <li key={tab.id} className="nav-item">
+                  <button
+                    className={`nav-link-btn ${isActive ? 'active' : ''}`}
+                    onClick={() => handleTabClick(tab.id)}
+                    id={`nav-tab-${tab.id}`}
+                    aria-current={isActive ? 'page' : undefined}
+                  >
+                    <span>{tab.label}</span>
+                    {isActive && <span className="active-dot" />}
+                  </button>
+                </li>
+              );
+            })}
           </ul>
         </nav>
 
         {/* Desktop Action Buttons */}
         <div className="navbar-actions">
-          <a
-            href="#contact"
+          <button
             className="btn btn-primary btn-sm nav-cta-btn"
-            onClick={(e) => {
-              handleNavClick(e, '#contact');
-              if (onOpenBooking) onOpenBooking();
-            }}
+            onClick={() => handleTabClick('contact')}
             id="nav-book-session-btn"
           >
             <span>Book a Session</span>
             <ChevronRight size={15} />
-          </a>
+          </button>
 
           {/* Mobile Menu Toggle Button */}
           <button
@@ -146,7 +121,7 @@ const Navbar = ({ onOpenBooking }) => {
       >
         <div className="mobile-drawer-header">
           <div className="brand-text-wrap">
-            <span className="brand-title">JUMP CLICK'S</span>
+            <span className="brand-title">JUMP CLICK&apos;S</span>
             <span className="brand-subtitle">FINE ART & COMMERCIAL</span>
           </div>
           <button 
@@ -161,34 +136,32 @@ const Navbar = ({ onOpenBooking }) => {
 
         <nav className="mobile-nav" aria-label="Mobile Navigation">
           <ul className="mobile-nav-list">
-            {navLinks.map((link) => (
-              <li key={link.id} className="mobile-nav-item">
-                <a
-                  href={link.href}
-                  className={`mobile-nav-link ${activeSection === link.id ? 'active' : ''}`}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  id={`mobile-link-${link.id}`}
-                >
-                  <span>{link.label}</span>
-                  <ChevronRight size={16} className="mobile-link-arrow" />
-                </a>
-              </li>
-            ))}
+            {NAV_TABS.map((tab) => {
+              const isActive = activeTab === tab.id;
+              return (
+                <li key={tab.id} className="mobile-nav-item">
+                  <button
+                    className={`mobile-nav-link-btn ${isActive ? 'active' : ''}`}
+                    onClick={() => handleTabClick(tab.id)}
+                    id={`mobile-tab-${tab.id}`}
+                  >
+                    <span>{tab.label}</span>
+                    <ChevronRight size={16} className="mobile-link-arrow" />
+                  </button>
+                </li>
+              );
+            })}
           </ul>
         </nav>
 
         <div className="mobile-drawer-footer">
-          <a
-            href="#contact"
+          <button
             className="btn btn-primary btn-block mobile-cta"
-            onClick={(e) => {
-              handleNavClick(e, '#contact');
-              if (onOpenBooking) onOpenBooking();
-            }}
+            onClick={() => handleTabClick('contact')}
             id="mobile-nav-cta-btn"
           >
             <span>Book Your Consultation</span>
-          </a>
+          </button>
 
           <div className="mobile-contact-strip">
             <a href={`tel:${STUDIO_INFO.phone}`} className="mobile-contact-pill">

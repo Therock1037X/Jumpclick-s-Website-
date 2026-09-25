@@ -17,7 +17,7 @@ import './Gallery.css';
 
 const CATEGORIES = ['All', 'Weddings', 'Portraits', 'Commercial', 'Events', 'Editorial'];
 
-const Gallery = ({ onInquireStyle }) => {
+const Gallery = ({ onInquireStyle, onNavigateToContact }) => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [lightboxIndex, setLightboxIndex] = useState(null); // null means closed
   const [isZoomed, setIsZoomed] = useState(false);
@@ -85,9 +85,8 @@ const Gallery = ({ onInquireStyle }) => {
     if (onInquireStyle) {
       onInquireStyle(`${photo.category} - ${photo.title}`);
     }
-    const contactEl = document.getElementById('contact');
-    if (contactEl) {
-      contactEl.scrollIntoView({ behavior: 'smooth' });
+    if (onNavigateToContact) {
+      onNavigateToContact();
     }
   };
 
@@ -191,18 +190,13 @@ const Gallery = ({ onInquireStyle }) => {
           <p className="gallery-archive-note">
             Showing {filteredItems.length} of {GALLERY_ITEMS.length} featured works. Our private physical archive contains over 10,000 heirloom frames.
           </p>
-          <a
-            href="#contact"
+          <button
             className="btn btn-primary"
-            onClick={(e) => {
-              e.preventDefault();
-              const contactEl = document.getElementById('contact');
-              if (contactEl) contactEl.scrollIntoView({ behavior: 'smooth' });
-            }}
+            onClick={() => onNavigateToContact && onNavigateToContact()}
             id="gallery-request-full-archive-btn"
           >
             <span>Request Full Archive Catalog</span>
-          </a>
+          </button>
         </div>
       </div>
 

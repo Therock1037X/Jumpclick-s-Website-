@@ -4,7 +4,7 @@ import { InstagramIcon, FacebookIcon } from './SocialIcons';
 import { STUDIO_INFO, SERVICES } from '../data/photographyData';
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({ onSelectTab, onSelectService }) => {
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [newsletterSubscribed, setNewsletterSubscribed] = useState(false);
 
@@ -21,11 +21,18 @@ const Footer = () => {
     }
   };
 
-  const handleNavClick = (e, href) => {
-    e.preventDefault();
-    const target = document.querySelector(href);
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+  const handleTabClick = (tabId) => {
+    if (onSelectTab) {
+      onSelectTab(tabId);
+    }
+  };
+
+  const handleServiceClick = (serviceTitle) => {
+    if (onSelectService) {
+      onSelectService(serviceTitle);
+    }
+    if (onSelectTab) {
+      onSelectTab('services');
     }
   };
 
@@ -36,11 +43,10 @@ const Footer = () => {
         <div className="footer-top-grid">
           {/* Brand Info Column */}
           <div className="footer-brand-column">
-            <a 
-              href="#home" 
-              className="footer-brand"
-              onClick={(e) => handleNavClick(e, '#home')}
-              aria-label="Back to top"
+            <button 
+              className="footer-brand btn-clean"
+              onClick={() => handleTabClick('home')}
+              aria-label="Back to home"
             >
               <div className="footer-brand-icon-wrap">
                 <Camera size={22} className="footer-camera-icon" />
@@ -49,7 +55,7 @@ const Footer = () => {
                 <span className="footer-brand-title">JUMP CLICK&apos;S</span>
                 <span className="footer-brand-sub">FINE ART PHOTOGRAPHY</span>
               </div>
-            </a>
+            </button>
 
             <p className="footer-brand-desc">
               Dedicated to the art of capturing authentic vulnerability, editorial grandeur, and timeless human legacy. Available worldwide.
@@ -73,25 +79,19 @@ const Footer = () => {
             <h4 className="footer-col-title">Navigation</h4>
             <ul className="footer-link-list">
               <li>
-                <a href="#home" onClick={(e) => handleNavClick(e, '#home')}>Home</a>
+                <button className="footer-link-btn" onClick={() => handleTabClick('home')}>Home</button>
               </li>
               <li>
-                <a href="#about" onClick={(e) => handleNavClick(e, '#about')}>About the Artist</a>
+                <button className="footer-link-btn" onClick={() => handleTabClick('about')}>About the Artist</button>
               </li>
               <li>
-                <a href="#services" onClick={(e) => handleNavClick(e, '#services')}>Signature Services</a>
+                <button className="footer-link-btn" onClick={() => handleTabClick('services')}>Signature Services</button>
               </li>
               <li>
-                <a href="#gallery" onClick={(e) => handleNavClick(e, '#gallery')}>Portfolio Gallery</a>
+                <button className="footer-link-btn" onClick={() => handleTabClick('gallery')}>Portfolio Gallery</button>
               </li>
               <li>
-                <a href="#experience" onClick={(e) => handleNavClick(e, '#experience')}>Process & FAQ</a>
-              </li>
-              <li>
-                <a href="#testimonials" onClick={(e) => handleNavClick(e, '#testimonials')}>Client Praise</a>
-              </li>
-              <li>
-                <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>Book a Session</a>
+                <button className="footer-link-btn" onClick={() => handleTabClick('contact')}>Contact & Booking</button>
               </li>
             </ul>
           </div>
@@ -102,9 +102,9 @@ const Footer = () => {
             <ul className="footer-link-list">
               {SERVICES.map((srv) => (
                 <li key={srv.id}>
-                  <a href="#services" onClick={(e) => handleNavClick(e, '#services')}>
+                  <button className="footer-link-btn" onClick={() => handleServiceClick(srv.title)}>
                     {srv.title}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>

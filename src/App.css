@@ -8,13 +8,24 @@
   flex-direction: column;
 }
 
-main {
+main.tab-viewport {
   flex-grow: 1;
   position: relative;
   z-index: 1;
+  min-height: 80vh;
 }
 
-/* Subtle separator line between major sections */
-section:not(#home) {
-  border-top: 1px solid rgba(226, 177, 118, 0.08);
+/* Page View Offset for non-Home tabs so fixed header doesn't cover content */
+.page-view-offset {
+  padding-top: 5.5rem;
+}
+
+@media (min-width: 768px) {
+  .page-view-offset {
+    padding-top: 6.5rem;
+  }
+}
+
+.tab-pane-container {
+  width: 100%;
 }
