@@ -36,8 +36,8 @@ const About = ({ onBookConsultation, onViewGallery }) => {
           <div className="about-visual-column">
             <div className="about-image-frame">
               <img
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=900"
-                alt="Alexandros Alex Rivera, Founder and Master Photographer"
+                src={ABOUT_DETAILS.founderImage || "/images/007 BRIDAL SHOOT/011.jpg"}
+                alt={ABOUT_DETAILS.founderName}
                 className="about-portrait-img"
                 loading="lazy"
                 width="600"

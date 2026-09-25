@@ -15,7 +15,7 @@ import {
 import { GALLERY_ITEMS } from '../data/photographyData';
 import './Gallery.css';
 
-const CATEGORIES = ['All', 'Weddings', 'Portraits', 'Commercial', 'Events', 'Editorial'];
+const CATEGORIES = ['All', 'Weddings', 'Pre-Wedding', 'Engagement', 'Bridal', 'Maternity', 'Baby Shoot', 'Birthday'];
 
 const Gallery = ({ onInquireStyle, onNavigateToContact }) => {
   const [activeCategory, setActiveCategory] = useState('All');

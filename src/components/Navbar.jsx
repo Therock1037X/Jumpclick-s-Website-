@@ -53,9 +53,19 @@ const Navbar = ({ activeTab, onSelectTab }) => {
           aria-label="Jump Click's Photography Home"
           id="nav-brand-logo"
         >
-          <div className="brand-icon-wrap">
-            <Camera className="brand-camera-icon" size={20} />
-            <div className="brand-icon-lens-ring"></div>
+          <div className={`brand-icon-wrap ${STUDIO_INFO.logoImage ? 'brand-icon-has-logo' : ''}`}>
+            {STUDIO_INFO.logoImage ? (
+              <img 
+                src={STUDIO_INFO.logoImage} 
+                alt="Jump Click's Photography Logo" 
+                className="brand-logo-img" 
+              />
+            ) : (
+              <>
+                <Camera className="brand-camera-icon" size={20} />
+                <div className="brand-icon-lens-ring"></div>
+              </>
+            )}
           </div>
           <div className="brand-text-wrap">
             <span className="brand-title">JUMP CLICK&apos;S</span>

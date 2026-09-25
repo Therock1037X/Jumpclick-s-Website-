@@ -2,12 +2,13 @@ export const STUDIO_INFO = {
   name: "Jump Click's Photography",
   shortName: "Jump Click's",
   tagline: "Capturing Unspoken Moments. Crafting Timeless Legacies.",
-  subTagline: "Award-winning photography studio in New York specializing in luxury weddings, fine-art portraits, commercial brand campaigns, and signature private events.",
-  address: "450 Art District Boulevard, Suite 300, New York, NY 10011",
-  phone: "+1 (555) 234-8900",
-  email: "studio@jumpclicksphotography.com",
+  subTagline: "Premier photography studio specializing in luxury weddings, royal bridal portraits, cinematic pre-wedding shoots, maternity, baby milestones, and joyous celebrations.",
+  logoImage: "/images/logo/Jump-clicks-logo_1.1.jpg",
+  address: "Jump Click's Photography Studio, Main Street",
+  phone: "+91 98765 43210",
+  email: "info@jumpclicksphotography.com",
   bookingEmail: "bookings@jumpclicksphotography.com",
-  hours: "Monday – Saturday: 9:00 AM – 7:00 PM | Sunday: By Private Appointment",
+  hours: "Monday – Saturday: 9:30 AM – 8:00 PM | Sunday: By Appointment",
   socials: {
     instagram: "https://instagram.com",
     facebook: "https://facebook.com",
@@ -16,487 +17,650 @@ export const STUDIO_INFO = {
     vimeo: "https://vimeo.com"
   },
   stats: [
-    { value: "12+", label: "Years of Mastery", subtext: "Serving worldwide since 2012" },
-    { value: "850+", label: "Stories Captured", subtext: "Weddings, portraits & brands" },
-    { value: "28", label: "Industry Awards", subtext: "Fine Art & Vogue features" },
-    { value: "99.8%", label: "Client Satisfaction", subtext: "Verified 5-star testimonials" }
+    { value: "12+", label: "Years of Mastery", subtext: "Crafting timeless visual memories" },
+    { value: "1,200+", label: "Stories Captured", subtext: "Weddings, portraits & milestones" },
+    { value: "100%", label: "Passionate Vision", subtext: "Every frame crafted with heart" },
+    { value: "99.8%", label: "Happy Families", subtext: "5-star reviews & cherished trust" }
   ]
 };
 
 export const HERO_SLIDES = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=85&w=2000",
-    category: "Luxury Destination Weddings",
-    title: "Ethereal Romance in Golden Light",
-    subtitle: "Documenting authentic chemistry against breathtaking natural vistas.",
-    location: "Lake Como, Italy"
+    image: "/images/001 WEDDING/DSC_4020.JPG",
+    category: "Luxury Weddings",
+    title: "Sacred Vows & Timeless Chemistry",
+    subtitle: "Documenting authentic chemistry, royal rituals, and heartfelt family emotions.",
+    location: "Grand Wedding Ceremony"
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=85&w=2000",
-    category: "Fine-Art & Editorial Portraits",
-    title: "Chiaroscuro & Emotional Depth",
-    subtitle: "High-contrast studio lighting that unmasks your most magnetic self.",
-    location: "Tribeca Studio, NY"
+    image: "/images/007 BRIDAL SHOOT/001.JPG",
+    category: "Royal Bridal Portraiture",
+    title: "Grace, Heritage & Magnificent Radiance",
+    subtitle: "Celebrating traditional poise, intricate lehengas, and ethereal bridal grandeur.",
+    location: "Bridal Atelier"
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=85&w=2000",
-    category: "Signature Galas & Celebrations",
-    title: "The Vivacity of Unscripted Joy",
-    subtitle: "Preserving spontaneous laughter and champagne-soaked memories.",
-    location: "Manhattan, NY"
+    image: "/images/003 PREEWEDDING/01 (1) (1).jpg",
+    category: "Cinematic Pre-Wedding",
+    title: "Poetic Romance in Golden Hues",
+    subtitle: "Unscripted laughter, candid glances, and stunning outdoor landscapes.",
+    location: "Scenic Vista"
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=85&w=2000",
-    category: "Commercial & Brand Storytelling",
-    title: "Precision, Texture & Luxury Aura",
-    subtitle: "Elevating products into iconic visual centerpieces for global campaigns.",
-    location: "SoHo Atelier, NY"
+    image: "/images/005 MATERNITY/001.jpg",
+    category: "Maternity & Motherhood",
+    title: "Honoring Life's Most Tender Beginnings",
+    subtitle: "Gentle, radiant portraits capturing the glow of motherhood and new life.",
+    location: "Studio Sanctuary"
+  },
+  {
+    id: 5,
+    image: "/images/004 BIRTHDAY/001.JPG",
+    category: "Milestone Celebrations",
+    title: "Pure Joy, Color & Unfiltered Happiness",
+    subtitle: "Preserving vibrant birthday laughter and cherished celebrations forever.",
+    location: "Celebration Venue"
   }
 ];
 
 export const ABOUT_DETAILS = {
-  founderName: "Alexandros 'Alex' Rivera",
+  founderName: "Jump Click's Lead Artists",
   founderTitle: "Lead Artist & Founder",
+  founderImage: "/images/007 BRIDAL SHOOT/011.jpg",
   experienceYears: 12,
-  bio: `Alexandros Rivera founded Jump Click's Photography with a singular conviction: photography shouldn't just record what someone looked like—it should immortalize how a moment felt. With a background spanning classical fine art and high-fashion editorial journalism in Paris and New York, Alex combines architectural precision with unstaged, intimate vulnerability.`,
-  philosophy: `“Every frame we click is a pact between shadow and light. We don't direct you into stiff, artificial smiles. We create an atmosphere where your genuine aura unfolds naturally, and then we freeze that lightning in a bottle.”`,
+  bio: `At Jump Click's Photography, our philosophy is anchored in one guiding belief: photography shouldn't just record what a celebration looked like—it should immortalize how every second felt. With over a decade of dedicated craftsmanship behind the camera, we specialize in luxury weddings, emotive pre-wedding films, royal bridal portraits, and tender family milestones.`,
+  philosophy: `“Every frame we capture is an ode to emotion. We don't force stiff or artificial poses. We create a relaxed, joyous environment where genuine connections unfold naturally, freezing lightning-in-a-bottle memories for generations to come.”`,
   signatureTraits: [
     {
-      title: "Documentary Precision",
+      title: "Documentary & Candid Precision",
       description: "Quiet observation that captures spontaneous glances, tears of joy, and subtle touches that others miss."
     },
     {
       title: "Handcrafted Color Science",
-      description: "No generic filters. Every single deliverable undergoes bespoke color balancing honoring skin tones and deep filmic contrast."
+      description: "No generic filters. Every deliverable undergoes bespoke color balancing honoring skin tones and rich cinematic contrast."
     },
     {
       title: "Tailored Creative Direction",
-      description: "From moodboarding and location scouting to on-site posing cues, you are guided effortlessly at every step."
+      description: "From theme consultation and location scouting to on-site natural posing cues, you are guided effortlessly at every step."
     },
     {
       title: "Archival Heirloom Quality",
-      description: "Delivering museum-grade prints, handcrafted leather albums, and high-resolution digital suites built to last generations."
+      description: "Delivering museum-grade prints, handcrafted luxury albums, and high-resolution digital suites built to last generations."
     }
   ],
   gearHighlights: [
-    "Sony Alpha 1 & Leica M11 Rangefinder Bodies",
-    "G-Master & Summilux Prime Optics (35mm f/1.4, 50mm f/1.2, 85mm f/1.4)",
-    "Bespoke Profoto B10X Plus Studio & Location Strobe Kits",
-    "Color-Calibrated EIZO ColorEdge Monitoring Suite"
+    "Dual Professional Full-Frame Cinema & High-Resolution Cameras",
+    "Prime Portrait Lenses (35mm f/1.4, 50mm f/1.2, 85mm f/1.4)",
+    "Bespoke Wireless Strobe & Atmospheric Lighting Kits",
+    "Calibrated Precision Post-Processing & Color Grading Workstations"
   ]
 };
 
 export const SERVICES = [
   {
     id: "weddings",
-    title: "Luxury Weddings & Elopements",
-    tagline: "Timeless Romance Captured with Fine-Art Elegance",
+    title: "Wedding Photography & Cinema",
+    tagline: "Sacred Vows, Heritage Rituals & Grand Celebrations",
     category: "Weddings",
-    description: "Comprehensive multi-camera coverage capturing everything from quiet bridal morning nerves to late-night dancefloor euphoria. Available across North America and worldwide destinations.",
-    price: "From $3,800",
-    turnaround: "4–6 Weeks (48hr Sneak Peek)",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=900",
+    description: "Comprehensive multi-camera coverage capturing everything from emotional bridal morning preparations to sacred pheras and jubilant reception dances.",
+    price: "Custom Bespoke Packages",
+    turnaround: "3–4 Weeks (48hr Sneak Peek)",
+    image: "/images/001 WEDDING/DSC_6370.JPG",
     features: [
-      "Up to 10 hours continuous coverage with 2 master photographers",
-      "Complimentary golden-hour engagement session included",
+      "Full wedding day coverage with senior master photographers",
+      "Traditional and candid photojournalistic storytelling",
       "Private online 4K gallery with unlimited high-res downloads",
-      "Custom 12x12 handcrafted linen or Italian leather heirloom album",
-      "Licensed drone aerial landscape captures (venue permitting)"
+      "Premium handcrafted hardcover heirloom wedding album",
+      "Drone aerial landscape captures (venue permitting)"
     ],
-    badge: "Most Requested"
+    badge: "Most Cherished"
   },
   {
-    id: "portraits",
-    title: "Fine-Art & Editorial Portraits",
-    tagline: "Striking, Magazine-Grade Individual & Executive Portraits",
-    category: "Portraits",
-    description: "Designed for artists, executives, founders, and individuals seeking portraiture that stands far apart from conventional headshots. High concept, sculptural lighting, and deliberate mood.",
-    price: "From $650",
+    id: "prewedding",
+    title: "Cinematic Pre-Wedding Shoots",
+    tagline: "Romantic Love Stories in Scenic & Architectural Locales",
+    category: "Pre-Wedding",
+    description: "A fun, relaxed day dedicated exclusively to your love story. Travel to picturesque scenic landscapes, historic forts, or beaches with curated styling.",
+    price: "Custom Packages",
+    turnaround: "1–2 Weeks",
+    image: "/images/003 PREEWEDDING/01 PR (11).jpg",
+    features: [
+      "Full-day creative shoot at 2 to 3 scenic destinations",
+      "Concept moodboard and wardrobe guidance beforehand",
+      "Multiple outfit changes with dynamic daylight & sunset lighting",
+      "High-resolution edited portraits and teaser reel highlights",
+      "Featured custom canvas prints for wedding entrance display"
+    ],
+    badge: "Couple Favorite"
+  },
+  {
+    id: "engagement",
+    title: "Engagement & Ring Ceremonies",
+    tagline: "The Joyful Beginning of Your Forever Chapter",
+    category: "Engagement",
+    description: "Preserving every radiant smile, the ring exchange, blessing from elders, and intimate candid moments shared between the couple and families.",
+    price: "Custom Packages",
+    turnaround: "1–2 Weeks",
+    image: "/images/002 ENGAGEMENT/_DSC8102.JPG",
+    features: [
+      "Complete coverage of rituals, ring ceremony, and family portraits",
+      "Candid couple portraits right before or after the ceremony",
+      "Fast 48-hour social media highlight delivery",
+      "Online interactive proofing and downloadable gallery",
+      "Seamless integration into full wedding packages"
+    ],
+    badge: "Milestone"
+  },
+  {
+    id: "bridal",
+    title: "Royal Bridal Portraiture",
+    tagline: "Intricate Attire, Heritage Jewelry & Exquisite Poise",
+    category: "Bridal",
+    description: "Dedicated editorial bridal portraits capturing the intricate details of mehendi, jewelry, veil styling, and regal confidence before the ceremony begins.",
+    price: "Custom Packages",
     turnaround: "5–7 Business Days",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=900",
+    image: "/images/007 BRIDAL SHOOT/DSC_9656.JPG",
     features: [
-      "2-hour dedicated studio or scenic architectural location session",
-      "Wardrobe and moodboard styling consultation prior to shoot",
-      "3 wardrobe changes with diverse lighting setups",
-      "15 meticulously retouched master portraits in high & web resolution",
-      "Full commercial usage rights for press, web & publication"
+      "Dedicated 2-hour bridal suite portraiture session",
+      "Detailed macro captures of jewelry, embroidery, and veil textures",
+      "Sculpted, soft beauty lighting designed for glowing skin tones",
+      "Magazine-grade retouching honoring natural texture",
+      "Fine art archival portrait prints ready for framing"
     ],
-    badge: "Studio Signature"
+    badge: "Signature Art"
   },
   {
-    id: "commercial",
-    title: "Commercial & Product Campaigns",
-    tagline: "High-Impact Visual Assets for Discerning Brands",
-    category: "Commercial",
-    description: "From luxury cosmetics, timepieces, and jewelry to lifestyle beverage campaigns. We translate brand identity into high-converting, aspirational visual narratives.",
-    price: "From $1,900",
-    turnaround: "7–10 Business Days",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=900",
+    id: "maternity",
+    title: "Maternity & Motherhood",
+    tagline: "Gentle, Ethereal Celebrations of Expecting Life",
+    category: "Maternity",
+    description: "Artistic, comfortable maternity photography sessions that celebrate the miraculous journey of motherhood in a calm, supportive setting.",
+    price: "Custom Packages",
+    turnaround: "5–7 Business Days",
+    image: "/images/005 MATERNITY/008.JPG",
     features: [
-      "Art direction, prop styling, and custom textured backdrops",
-      "Macro lens precision detailing and liquid/splash motion freezing",
-      "High-end composite retouching, dust elimination, and color grading",
-      "Multi-ratio exports optimized for billboard, e-commerce & socials",
-      "Full worldwide advertising license and raw file archiving"
+      "Cozy studio or serene outdoor sunset location options",
+      "Partner and family participation encouraged",
+      "Access to maternity gown suggestions and gentle posing cues",
+      "Airy, warm, and natural color grading",
+      "High-resolution digital collection"
     ],
-    badge: "Brand Favorite"
+    badge: "Tender Moments"
   },
   {
-    id: "events",
-    title: "Corporate Galas & VIP Events",
-    tagline: "Dynamic, Unobtrusive Coverage of Milestone Occasions",
-    category: "Events",
-    description: "Discreet documentary coverage for charity galas, product launches, corporate summits, and private anniversary celebrations without disrupting the guest experience.",
-    price: "From $1,400",
-    turnaround: "24–48hr Press Turnaround",
-    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=900",
+    id: "baby",
+    title: "Baby & Kids Milestones",
+    tagline: "Innocent Smiles, Little Giggles & Cherished Wonder",
+    category: "Baby Shoot",
+    description: "Capturing your newborn's tiny features or your toddler's bubbly personality in playful, safe, and heartwarming portrait sessions.",
+    price: "Custom Packages",
+    turnaround: "5–7 Business Days",
+    image: "/images/006 BABY SHOOT/005.JPG",
     features: [
-      "Full event storytelling: candid guest joy, keynote addresses & decor",
-      "Expedited next-morning press & PR highlight package (30 select images)",
-      "High-speed flash synchronization for low-light banquet halls",
-      "Branded guest download portal with custom event landing page",
-      "Multi-photographer crew available for large-scale venues"
+      "Patience-first approach with frequent breaks for feeding & comfort",
+      "Clean, sanitized, baby-safe props and creative backdrops",
+      "Playful candid moments of genuine laughter and curiosity",
+      "Family cuddles and generational portraits included",
+      "Keepsake photobook options available"
     ],
-    badge: "Corporate & VIP"
+    badge: "Pure Delight"
   },
   {
-    id: "editorial",
-    title: "Fashion & Lookbook Productions",
-    tagline: "Avant-Garde Concepts for Designers and Publications",
-    category: "Editorial",
-    description: "Working in close lockstep with fashion houses, independent designers, and model agencies to create arresting lookbooks and runway-inspired visual storytelling.",
-    price: "From $2,200",
-    turnaround: "7–12 Business Days",
-    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=900",
+    id: "birthday",
+    title: "Birthdays & Family Celebrations",
+    tagline: "Vibrant Energy, Cake Smashes & Unbridled Joy",
+    category: "Birthday",
+    description: "High-energy, unobtrusive event photography for 1st birthdays, milestone jubilees, and family festivities where no laugh or hug goes uncaptured.",
+    price: "Custom Packages",
+    turnaround: "3–5 Business Days",
+    image: "/images/004 BIRTHDAY/002.JPG",
     features: [
-      "Comprehensive location scouting & lighting design",
-      "On-set tethered live monitoring for creative directors",
-      "Up to 8 model look changes with specialized lighting shifts",
-      "High-fashion skin retouching preserving natural pores & textures",
-      "Editorial print sizing and digital lookbook formatting"
+      "Complete coverage of venue decor, cake cutting, and guest interactions",
+      "Expressive candid captures of kids playing and families reuniting",
+      "Group portraits with grandparents and special guests",
+      "Rapid turnaround for social sharing and thank-you notes",
+      "High-definition online cloud gallery for all guests"
     ],
-    badge: "Fashion Edition"
-  },
-  {
-    id: "architecture",
-    title: "Architectural & Interior Spaces",
-    tagline: "Sculpted Perspective, Atmosphere & Twilight Lighting",
-    category: "Commercial",
-    description: "Showcasing luxury estates, boutique hotels, restaurants, and architectural triumphs with perspective-corrected wide angles and atmospheric twilight captures.",
-    price: "From $1,100",
-    turnaround: "5 Business Days",
-    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=900",
-    features: [
-      "Tilt-shift perspective correction for immaculate vertical lines",
-      "Ambient + flash composite blending for true color fidelity",
-      "Twilight & blue-hour exterior architectural captures",
-      "Ultra-wide and detailed architectural vignette compositions",
-      "Architectural licensing for architects, interior designers & hospitality"
-    ],
-    badge: "Spatial Design"
+    badge: "Celebration"
   }
 ];
 
 export const GALLERY_ITEMS = [
+  // 1. Weddings
   {
     id: 1,
-    title: "Amalfi Golden Hour Reverie",
+    title: "Sacred Union in Golden Light",
     category: "Weddings",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=85&w=1400",
+    image: "/images/001 WEDDING/DSC_4020.JPG",
     aspect: "portrait",
-    location: "Ravello, Italy",
+    location: "Wedding Ceremony",
     year: "2025",
-    camera: "Sony Alpha 1",
-    lens: "FE 50mm f/1.2 GM",
-    exif: "f/1.6 • 1/2000s • ISO 80",
-    client: "Sophia & Matteo",
-    story: "Captured 10 minutes prior to sunset along the cliffside terraces of Ravello. The wind caught Sophia's veil just as the golden haze engulfed the Mediterranean."
+    camera: "Nikon Professional",
+    lens: "85mm f/1.4 Prime",
+    exif: "f/1.8 • 1/800s • ISO 100",
+    client: "Wedding Celebrations",
+    story: "Captured right during the sacred ritual as natural light filtered onto the couple, framing pure heartfelt devotion."
   },
   {
     id: 2,
-    title: "Noir & Amber Contours",
-    category: "Portraits",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=85&w=1400",
-    aspect: "portrait",
-    location: "New York Studio 4",
+    title: "Grandeur of Heritage Pheras",
+    category: "Weddings",
+    image: "/images/001 WEDDING/DSC_6370.JPG",
+    aspect: "landscape",
+    location: "Royal Mandap",
     year: "2025",
-    camera: "Leica M11",
-    lens: "Noctilux-M 50mm f/0.95",
-    exif: "f/1.2 • 1/400s • ISO 100",
-    client: "Elena Vance (Cellist)",
-    story: "A single beauty dish with honeycomb grid positioned at 45 degrees, creating a painterly chiaroscuro reminiscent of Caravaggio."
+    camera: "Nikon Professional",
+    lens: "35mm f/1.4",
+    exif: "f/2.2 • 1/250s • ISO 400",
+    client: "Royal Wedding",
+    story: "Rich scarlet hues and joyous smiles as the holy fire illuminated the bride and groom during vows."
   },
   {
     id: 3,
-    title: "Chronograph Precision in Slate",
-    category: "Commercial",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=85&w=1400",
-    aspect: "landscape",
-    location: "Atelier Jump Click's",
+    title: "Radiant Smiles & Forever Promises",
+    category: "Weddings",
+    image: "/images/001 WEDDING/DSC_6471.JPG",
+    aspect: "portrait",
+    location: "Grand Banquet",
     year: "2025",
-    camera: "Sony Alpha 1",
-    lens: "FE 90mm f/2.8 Macro G OSS",
-    exif: "f/11 • 1/160s • ISO 64 (Focus Stacked)",
-    client: "Horology House",
-    story: "Composited across 18 focus-stacked exposures to render every gear tooth and polished bezel with sub-millimeter sharpness."
+    camera: "Nikon Professional",
+    lens: "50mm f/1.4",
+    exif: "f/2.0 • 1/320s • ISO 200",
+    client: "Joyful Couple",
+    story: "An unscripted moment of shared laughter following the garland exchange ceremony."
   },
   {
     id: 4,
-    title: "The Midnight Gala Toast",
-    category: "Events",
-    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=85&w=1400",
+    title: "Traditional Elegance in Red & Gold",
+    category: "Weddings",
+    image: "/images/001 WEDDING/_DSC8554.JPG",
     aspect: "landscape",
-    location: "The Plaza Hotel, NYC",
+    location: "Ceremonial Stage",
     year: "2024",
-    camera: "Sony Alpha 7R V",
-    lens: "FE 24-70mm f/2.8 GM II",
-    exif: "f/2.8 • 1/250s • ISO 1600",
-    client: "Metropolitan Heritage Foundation",
-    story: "Spontaneous laughter during the closing keynote toast. Ambient chandelier glimmer balanced with bounced warm off-camera fill."
+    camera: "Nikon Professional",
+    lens: "70-200mm f/2.8",
+    exif: "f/2.8 • 1/200s • ISO 640",
+    client: "Family Celebrations",
+    story: "Stunning colors and intricate bridal jewelry framed against soft floral backdrop decor."
   },
   {
     id: 5,
-    title: "Silk, Lace & Sacred Silence",
+    title: "The Regal Royal Procession",
     category: "Weddings",
-    image: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=85&w=1400",
-    aspect: "square",
-    location: "Aspen, Colorado",
+    image: "/images/001 WEDDING/DSC_9619.JPG",
+    aspect: "portrait",
+    location: "Wedding Pavilion",
     year: "2024",
-    camera: "Sony Alpha 1",
-    lens: "FE 85mm f/1.4 GM",
-    exif: "f/1.8 • 1/1200s • ISO 100",
-    client: "Clara & Julian",
-    story: "Taken in the quiet moments before walking down the pine-canopied aisle. Intimate, serene, and steeped in quiet anticipation."
+    camera: "Nikon Professional",
+    lens: "24-70mm f/2.8",
+    exif: "f/2.8 • 1/400s • ISO 320",
+    client: "Grand Wedding",
+    story: "The joyful energy as the groom arrives surrounded by family music and dance."
   },
+
+  // 2. Pre-Wedding
   {
     id: 6,
-    title: "Introspective Gaze",
-    category: "Portraits",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=85&w=1400",
-    aspect: "square",
-    location: "DUMBO, Brooklyn",
+    title: "Whimsical Romantic Chemistry",
+    category: "Pre-Wedding",
+    image: "/images/003 PREEWEDDING/01 (1) (1).jpg",
+    aspect: "portrait",
+    location: "Scenic Hilltop",
     year: "2025",
-    camera: "Leica M11",
-    lens: "Summilux-M 35mm f/1.4",
-    exif: "f/2.0 • 1/640s • ISO 125",
-    client: "Marcus Chen (Architect)",
-    story: "Natural window light framed against weathered concrete and steel, accentuating architectural texture and quiet strength."
+    camera: "Nikon Professional",
+    lens: "85mm f/1.4",
+    exif: "f/1.6 • 1/1600s • ISO 100",
+    client: "Love Story Shoot",
+    story: "Warm dusk breeze, an ethereal flowing gown, and completely spontaneous couple intimacy."
   },
   {
     id: 7,
-    title: "Milanese Monochrome Silhouette",
-    category: "Editorial",
-    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=85&w=1400",
-    aspect: "portrait",
-    location: "Milan, Italy",
-    year: "2024",
-    camera: "Sony Alpha 1",
-    lens: "FE 35mm f/1.4 GM",
-    exif: "f/2.8 • 1/1600s • ISO 100",
-    client: "L'Aura Magazine",
-    story: "High-contrast architectural lines of Milan's Galleria counterbalanced by flowing haute-couture movement."
+    title: "Sunset Whispers & Golden Vistas",
+    category: "Pre-Wedding",
+    image: "/images/003 PREEWEDDING/01 PR (11).jpg",
+    aspect: "landscape",
+    location: "Lakeside Valley",
+    year: "2025",
+    camera: "Nikon Professional",
+    lens: "35mm f/1.4",
+    exif: "f/2.0 • 1/2000s • ISO 80",
+    client: "Sunset Couple",
+    story: "Basking in the final 10 minutes of golden hour across serene reflective waters."
   },
   {
     id: 8,
-    title: "Botanical Essence & Prism Reflections",
-    category: "Commercial",
-    image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=85&w=1400",
+    title: "Timeless Embrace in Nature",
+    category: "Pre-Wedding",
+    image: "/images/003 PREEWEDDING/09.jpg",
     aspect: "portrait",
-    location: "Atelier Jump Click's",
+    location: "Architectural Ruins",
     year: "2025",
-    camera: "Sony Alpha 1",
-    lens: "FE 90mm f/2.8 Macro",
-    exif: "f/8 • 1/200s • ISO 100",
-    client: "Maison de Grasse",
-    story: "Optical glass prisms split direct strobe beams to cast ethereal rainbow caustics across the glass perfume flacon."
+    camera: "Nikon Professional",
+    lens: "50mm f/1.2",
+    exif: "f/1.8 • 1/1000s • ISO 100",
+    client: "Candid Story",
+    story: "Classic composition emphasizing the connection and subtle romantic glances between the couple."
   },
   {
     id: 9,
-    title: "Electric Cadence on Stage",
-    category: "Events",
-    image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=85&w=1400",
+    title: "Cinematic Modern Romance",
+    category: "Pre-Wedding",
+    image: "/images/003 PREEWEDDING/_DSC1807 copy.jpg",
     aspect: "landscape",
-    location: "Brooklyn Mirage, NYC",
+    location: "Open Meadows",
     year: "2024",
-    camera: "Sony Alpha 7R V",
-    lens: "FE 70-200mm f/2.8 GM II",
-    exif: "f/2.8 • 1/500s • ISO 3200",
-    client: "Harmonic Soundstage",
-    story: "Harnessing the venue's laser array to slice through atmospheric haze, framing the headline artist in a halo of purple luminescence."
+    camera: "Nikon Professional",
+    lens: "85mm f/1.4",
+    exif: "f/1.8 • 1/1250s • ISO 100",
+    client: "Pre-Wedding Session",
+    story: "Wide cinematic framing capturing both the grandeur of the landscape and the warmth of the couple."
   },
   {
     id: 10,
-    title: "Oia Caldera Promise",
-    category: "Weddings",
-    image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=85&w=1400",
-    aspect: "landscape",
-    location: "Santorini, Greece",
-    year: "2025",
-    camera: "Sony Alpha 1",
-    lens: "FE 24-70mm f/2.8 GM II",
-    exif: "f/4.0 • 1/1000s • ISO 100",
-    client: "Valerie & Daniel",
-    story: "An intimate cliffside vows renewal overlooking the submerged Aegean caldera during the tranquil dawn light."
+    title: "Laughter in the Breeze",
+    category: "Pre-Wedding",
+    image: "/images/003 PREEWEDDING/03 (1).jpg",
+    aspect: "portrait",
+    location: "Scenic Gardens",
+    year: "2024",
+    camera: "Nikon Professional",
+    lens: "50mm f/1.4",
+    exif: "f/2.0 • 1/800s • ISO 100",
+    client: "Playful Romance",
+    story: "Unstaged, joy-filled candid moment showcasing the couple's fun, spontaneous personality."
   },
+
+  // 3. Engagement
   {
     id: 11,
-    title: "Luminous Authenticity",
-    category: "Portraits",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=85&w=1400",
-    aspect: "portrait",
-    location: "SoHo, New York",
+    title: "The Sacred Ring Ceremony",
+    category: "Engagement",
+    image: "/images/002 ENGAGEMENT/_DSC8102.JPG",
+    aspect: "landscape",
+    location: "Ceremony Hall",
     year: "2025",
-    camera: "Sony Alpha 1",
-    lens: "FE 85mm f/1.4 GM",
-    exif: "f/1.4 • 1/800s • ISO 100",
-    client: "Maya Lin (Author)",
-    story: "Unposed and spontaneous. Shot during an effortless conversation between takes while natural cobblestone reflections lit her eyes."
+    camera: "Nikon Professional",
+    lens: "70-200mm f/2.8",
+    exif: "f/2.8 • 1/250s • ISO 500",
+    client: "Engagement Celebration",
+    story: "The moment the ring is slipped onto the finger, framed with sparkling stage chandeliers."
   },
   {
     id: 12,
-    title: "Parisian Dusk Stride",
-    category: "Editorial",
-    image: "https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&q=85&w=1400",
+    title: "Joyous Smiles & Family Blessings",
+    category: "Engagement",
+    image: "/images/002 ENGAGEMENT/DSC_8334.JPG",
     aspect: "portrait",
-    location: "Place Vendôme, Paris",
-    year: "2024",
-    camera: "Leica M11",
-    lens: "Summicron-M 50mm f/2",
-    exif: "f/2.8 • 1/320s • ISO 400",
-    client: "Moda Paris",
-    story: "Editorial street narrative blending tailored trenchcoat movement with evening wet-stone asphalt reflections."
+    location: "Grand Stage",
+    year: "2025",
+    camera: "Nikon Professional",
+    lens: "85mm f/1.4",
+    exif: "f/2.0 • 1/320s • ISO 400",
+    client: "Happy Couple",
+    story: "A heartfelt candid glance between the couple surrounded by close family members."
   },
   {
     id: 13,
-    title: "Candlelit Glasshouse Reverence",
-    category: "Weddings",
-    image: "https://images.unsplash.com/photo-1519225424784-b04313f8486d?auto=format&fit=crop&q=85&w=1400",
-    aspect: "square",
-    location: "Hudson Valley, NY",
+    title: "Radiant Couple Portrait",
+    category: "Engagement",
+    image: "/images/002 ENGAGEMENT/_DSC8076.JPG",
+    aspect: "landscape",
+    location: "Floral Backdrop",
     year: "2024",
-    camera: "Sony Alpha 7R V",
-    lens: "FE 35mm f/1.4 GM",
-    exif: "f/1.4 • 1/125s • ISO 1250",
-    client: "Genevieve & Liam",
-    story: "300 pillar candles in a 19th-century conservatory. Preserving the golden warmth without artificial strobe contamination."
+    camera: "Nikon Professional",
+    lens: "50mm f/1.4",
+    exif: "f/2.2 • 1/200s • ISO 400",
+    client: "Ring Ceremony",
+    story: "Soft ambient lighting highlighting the intricate pastel outfits and celebratory florals."
   },
   {
     id: 14,
-    title: "Equestrian Leather Artisanry",
-    category: "Commercial",
-    image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=85&w=1400",
-    aspect: "landscape",
-    location: "Brooklyn Studio",
-    year: "2025",
-    camera: "Sony Alpha 1",
-    lens: "FE 90mm f/2.8 Macro",
-    exif: "f/8 • 1/160s • ISO 80",
-    client: "Vanguard Goods Co.",
-    story: "Tannery textures and brass rivet stitching accentuated through directional raking cross-light."
+    title: "The Milestone Toast",
+    category: "Engagement",
+    image: "/images/002 ENGAGEMENT/_DSC8061.JPG",
+    aspect: "portrait",
+    location: "Celebration Stage",
+    year: "2024",
+    camera: "Nikon Professional",
+    lens: "35mm f/1.4",
+    exif: "f/2.0 • 1/250s • ISO 320",
+    client: "Couple & Family",
+    story: "Commemorating the official union of two families with timeless photographic warmth."
   },
+
+  // 4. Bridal Shoot
   {
     id: 15,
-    title: "Rooftop Sunset Vernissage",
-    category: "Events",
-    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=85&w=1400",
-    aspect: "landscape",
-    location: "Chelsea Arts Rooftop, NY",
-    year: "2024",
-    camera: "Sony Alpha 1",
-    lens: "FE 24mm f/1.4 GM",
-    exif: "f/2.0 • 1/400s • ISO 400",
-    client: "Apex Contemporary Art",
-    story: "Curators and collectors bathed in the final amber rays of Manhattan sunset during the biennial opening."
+    title: "Royal Poise in Crimson & Gold",
+    category: "Bridal",
+    image: "/images/007 BRIDAL SHOOT/001.JPG",
+    aspect: "portrait",
+    location: "Bridal Suite",
+    year: "2025",
+    camera: "Nikon Professional",
+    lens: "85mm f/1.4 Prime",
+    exif: "f/1.8 • 1/500s • ISO 100",
+    client: "Regal Bride",
+    story: "Elegantly framed bridal beauty highlighting the detailed embroidery, maang tikka, and serene poise."
   },
   {
     id: 16,
-    title: "Avant-Garde Desert Prism",
-    category: "Editorial",
-    image: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&q=85&w=1400",
-    aspect: "square",
-    location: "Joshua Tree, CA",
+    title: "Intricate Mehendi & Fine Jewels",
+    category: "Bridal",
+    image: "/images/007 BRIDAL SHOOT/011.jpg",
+    aspect: "portrait",
+    location: "Bridal Atelier",
     year: "2025",
-    camera: "Sony Alpha 1",
-    lens: "FE 85mm f/1.4 GM",
-    exif: "f/1.4 • 1/3200s • ISO 50",
-    client: "Solaris Couture",
-    story: "High noon desert sunlight diffused through theatrical amber gel scrims, casting an extraterrestrial editorial glow."
-  }
-];
+    camera: "Nikon Professional",
+    lens: "50mm f/1.4",
+    exif: "f/2.0 • 1/400s • ISO 160",
+    client: "Bridal Portraiture",
+    story: "Delicate macro focus honoring the craftsmanship of bridal jewelry and intricate hand henna."
+  },
+  {
+    id: 17,
+    title: "The Ethereal Veil Silhouette",
+    category: "Bridal",
+    image: "/images/007 BRIDAL SHOOT/016.jpg",
+    aspect: "portrait",
+    location: "Studio Stage",
+    year: "2025",
+    camera: "Nikon Professional",
+    lens: "85mm f/1.4",
+    exif: "f/1.8 • 1/640s • ISO 100",
+    client: "Heritage Bride",
+    story: "Backlit translucency through the sheer dupatta, casting a soft angelic halo."
+  },
+  {
+    id: 18,
+    title: "Radiance Before the Sacred Vows",
+    category: "Bridal",
+    image: "/images/007 BRIDAL SHOOT/DSC_9656.JPG",
+    aspect: "portrait",
+    location: "Palace Corridor",
+    year: "2024",
+    camera: "Nikon Professional",
+    lens: "50mm f/1.4",
+    exif: "f/2.2 • 1/320s • ISO 200",
+    client: "Candid Bride",
+    story: "Capturing the quiet, confident calm moments before walking down to the wedding mandap."
+  },
+  {
+    id: 19,
+    title: "Traditional Splendor & Grace",
+    category: "Bridal",
+    image: "/images/007 BRIDAL SHOOT/015.jpg",
+    aspect: "portrait",
+    location: "Bridal Suite",
+    year: "2024",
+    camera: "Nikon Professional",
+    lens: "85mm f/1.4",
+    exif: "f/2.0 • 1/400s • ISO 100",
+    client: "Classic Bridal",
+    story: "Soft studio lighting bringing out the deep velvet tones and sparkling jewelry."
+  },
+  {
+    id: 20,
+    title: "Timeless Heritage Glamour",
+    category: "Bridal",
+    image: "/images/007 BRIDAL SHOOT/DSC_8811.JPG",
+    aspect: "landscape",
+    location: "Royal Venue",
+    year: "2024",
+    camera: "Nikon Professional",
+    lens: "35mm f/1.4",
+    exif: "f/2.4 • 1/250s • ISO 250",
+    client: "Bridal Splendor",
+    story: "Wide environmental bridal portrait showcasing the majestic setting and royal lehenga."
+  },
 
-export const CLIENT_TESTIMONIALS = [
+  // 5. Maternity
   {
-    id: 1,
-    quote: "Alex and the Jump Click's crew were pure magic. Our wedding gallery didn't look like stiff photos—it looked like stills pulled from an award-winning French film. Looking back at them brings immediate happy tears.",
-    client: "Genevieve & Liam Sterling",
-    role: "Destination Wedding in Hudson Valley",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200"
+    id: 21,
+    title: "Motherhood's Ethereal Glow",
+    category: "Maternity",
+    image: "/images/005 MATERNITY/001.jpg",
+    aspect: "portrait",
+    location: "Studio Sanctuary",
+    year: "2025",
+    camera: "Nikon Professional",
+    lens: "50mm f/1.4",
+    exif: "f/2.0 • 1/320s • ISO 100",
+    client: "Expecting Mother",
+    story: "Gentle window light illuminating the anticipation and love of an expecting mother."
   },
   {
-    id: 2,
-    quote: "I've commissioned dozens of commercial photographers for luxury watch and jewelry campaigns. Jump Click's level of technical lighting precision, color consistency, and speed was nothing short of world-class.",
-    client: "Julian Vance",
-    role: "Creative Director, Horology House NY",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200"
+    id: 22,
+    title: "A Gentle Beginning",
+    category: "Maternity",
+    image: "/images/005 MATERNITY/003.jpg",
+    aspect: "portrait",
+    location: "Studio Bloom",
+    year: "2025",
+    camera: "Nikon Professional",
+    lens: "85mm f/1.4",
+    exif: "f/1.8 • 1/400s • ISO 100",
+    client: "Motherhood Portrait",
+    story: "Poetic and peaceful composition capturing the beauty and tenderness of pregnancy."
   },
   {
-    id: 3,
-    quote: "I am typically dreadfully awkward in front of a camera. Alex immediately made me feel completely relaxed, listened to my aesthetic vision, and produced portraits that completely elevated my personal brand and speaking career.",
-    client: "Maya Lin",
-    role: "Author & Keynote Speaker",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200"
-  }
-];
+    id: 23,
+    title: "Anticipating Wonder",
+    category: "Maternity",
+    image: "/images/005 MATERNITY/006.jpg",
+    aspect: "portrait",
+    location: "Studio Sanctuary",
+    year: "2024",
+    camera: "Nikon Professional",
+    lens: "50mm f/1.4",
+    exif: "f/2.0 • 1/250s • ISO 125",
+    client: "Maternity Story",
+    story: "Warm, supportive atmosphere designed to create timeless keepsakes for the child's future."
+  },
+  {
+    id: 24,
+    title: "Radiant Grace in Flowing Fabric",
+    category: "Maternity",
+    image: "/images/005 MATERNITY/008.JPG",
+    aspect: "portrait",
+    location: "Studio Set",
+    year: "2024",
+    camera: "Nikon Professional",
+    lens: "85mm f/1.4",
+    exif: "f/2.2 • 1/500s • ISO 100",
+    client: "Expecting Parents",
+    story: "Flowing elegance showcasing the harmony between light, silhouette, and new life."
+  },
 
-export const WORKFLOW_STEPS = [
+  // 6. Baby Shoot
   {
-    step: "01",
-    title: "Vision & Creative Discovery",
-    description: "We begin with a personal coffee or virtual consultation. We explore your moodboards, venue architecture, lighting preferences, and overall aesthetic vision."
+    id: 25,
+    title: "Sweet Innocence & Little Wonders",
+    category: "Baby Shoot",
+    image: "/images/006 BABY SHOOT/005.JPG",
+    aspect: "square",
+    location: "Baby Studio",
+    year: "2025",
+    camera: "Nikon Professional",
+    lens: "50mm f/1.4 Macro",
+    exif: "f/2.8 • 1/200s • ISO 200",
+    client: "Little Miracle",
+    story: "Pure sweetness and innocent eyes in a sanitized, warm baby-friendly studio setup."
   },
   {
-    step: "02",
-    title: "Bespoke Styling & Prep",
-    description: "Detailed location scouting, timeline design, wardrobe pairing advice, and lighting blueprint so nothing is left to chance on shoot day."
+    id: 26,
+    title: "Playful Giggles & Tiny Toes",
+    category: "Baby Shoot",
+    image: "/images/006 BABY SHOOT/IMG_20180321_184951_740.jpg",
+    aspect: "portrait",
+    location: "Cozy Studio Corner",
+    year: "2024",
+    camera: "High-Resolution Sensor",
+    lens: "35mm Prime",
+    exif: "f/2.0 • 1/250s • ISO 160",
+    client: "Baby Milestone",
+    story: "Unscripted giggle and bright wide eyes as bubbles floated across the studio set."
   },
   {
-    step: "03",
-    title: "The Session: Organic & Guided",
-    description: "No robotic posing. We gently prompt natural interactions and movement, ensuring you feel completely confident, relaxed, and present in the moment."
+    id: 27,
+    title: "Curious Explorations",
+    category: "Baby Shoot",
+    image: "/images/006 BABY SHOOT/011 copy.jpg",
+    aspect: "landscape",
+    location: "Creative Baby Set",
+    year: "2024",
+    camera: "Nikon Professional",
+    lens: "50mm f/1.4",
+    exif: "f/2.5 • 1/320s • ISO 200",
+    client: "Toddler Milestone",
+    story: "Charming curiosity captured as the little one explored their milestone props."
   },
-  {
-    step: "04",
-    title: "Fine-Art Color Grading & Delivery",
-    description: "Within 48 hours, you receive a curated sneak peek gallery. Full private galleries are hand-graded with museum-quality care and delivered in 4K resolution."
-  }
-];
 
-export const FAQ_ITEMS = [
+  // 7. Birthday
   {
-    question: "How far in advance should we reserve our date?",
-    answer: "For destination weddings and peak weekend dates (May through October), we recommend reserving 8 to 14 months in advance. Studio portrait sessions and commercial shoots can typically be booked 3 to 6 weeks out depending on our calendar availability."
+    id: 28,
+    title: "Joyous First Birthday Jubilee",
+    category: "Birthday",
+    image: "/images/004 BIRTHDAY/001.JPG",
+    aspect: "landscape",
+    location: "Celebration Arena",
+    year: "2025",
+    camera: "Nikon Professional",
+    lens: "35mm f/1.4",
+    exif: "f/2.2 • 1/250s • ISO 400",
+    client: "Milestone Birthday",
+    story: "Vibrant balloons, festive cake, and joyful applause celebrating a precious first year."
   },
   {
-    question: "Do you travel for destination weddings and commercial shoots?",
-    answer: "Absolutely. Over 45% of our work is destination-based across Europe, the Caribbean, and throughout North America. We handle all our own travel logistics and provide straightforward flat-rate travel packages with zero hidden surprise fees."
+    id: 29,
+    title: "Cake Smash & Bubbly Laughter",
+    category: "Birthday",
+    image: "/images/004 BIRTHDAY/002.JPG",
+    aspect: "portrait",
+    location: "Festive Banquet",
+    year: "2025",
+    camera: "Nikon Professional",
+    lens: "50mm f/1.4",
+    exif: "f/2.0 • 1/320s • ISO 320",
+    client: "Birthday Joy",
+    story: "Frosting everywhere and pure unbridled happiness lighting up the entire room."
   },
   {
-    question: "How do we receive our final images?",
-    answer: "You receive access to a private, password-protected online gallery with unlimited high-resolution 300DPI downloads (for large-format printing) and optimized web-size versions for effortless social sharing. You also retain full personal printing rights."
-  },
-  {
-    question: "What is your approach to posing and direction?",
-    answer: "We believe the most striking photographs live in the in-between moments. We give intuitive, gentle prompts that encourage organic movement, laughter, and natural connection rather than freezing you into rigid, uncomfortable postures."
-  },
-  {
-    question: "Can we order custom leather albums and fine art prints?",
-    answer: "Yes! We partner with master bookbinders in Italy to produce museum-grade, lay-flat albums bound in genuine leather, Japanese silk, or Belgian linen, printed with archival pigment inks rated for 150+ years of color permanence."
+    id: 30,
+    title: "Family Celebration & Warm Hugs",
+    category: "Birthday",
+    image: "/images/004 BIRTHDAY/003.JPG",
+    aspect: "landscape",
+    location: "Party Hall",
+    year: "2024",
+    camera: "Nikon Professional",
+    lens: "24-70mm f/2.8",
+    exif: "f/2.8 • 1/200s • ISO 500",
+    client: "Family Milestone",
+    story: "Grandparents, parents, and friends coming together in joyous celebration."
   }
 ];

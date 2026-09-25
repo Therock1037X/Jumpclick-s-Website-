@@ -48,8 +48,16 @@ const Footer = ({ onSelectTab, onSelectService }) => {
               onClick={() => handleTabClick('home')}
               aria-label="Back to home"
             >
-              <div className="footer-brand-icon-wrap">
-                <Camera size={22} className="footer-camera-icon" />
+              <div className={`footer-brand-icon-wrap ${STUDIO_INFO.logoImage ? 'footer-brand-has-logo' : ''}`}>
+                {STUDIO_INFO.logoImage ? (
+                  <img 
+                    src={STUDIO_INFO.logoImage} 
+                    alt="Jump Click's Logo" 
+                    className="footer-logo-img" 
+                  />
+                ) : (
+                  <Camera size={22} className="footer-camera-icon" />
+                )}
               </div>
               <div className="footer-brand-text">
                 <span className="footer-brand-title">JUMP CLICK&apos;S</span>
