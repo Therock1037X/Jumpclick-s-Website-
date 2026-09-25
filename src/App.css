@@ -1,0 +1,20 @@
+/* Portfolio App Root Styles */
+.portfolio-app-root {
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+}
+
+/* Subtle separator line between major sections */
+section:not(#home) {
+  border-top: 1px solid rgba(226, 177, 118, 0.08);
+}
